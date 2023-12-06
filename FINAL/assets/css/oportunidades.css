@@ -1,0 +1,124 @@
+.content_oportunidades{
+    display: flex;
+    max-width: 1024px;
+    margin-top: 0px;
+    /* margin-left: 70px; */
+    /* margin-right: 70px; */
+    flex-direction: column;
+}
+.content_oportunidades .titulo{text-align: center; padding-bottom: 40px;}
+
+.content_oportunidades .titulo h1{
+    color: #bd1877;
+    font-size: 1.8em;
+}
+
+.content_oportunidades .modulo{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.content_oportunidades .image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content_oportunidades .image img{
+    border-radius: 12px;
+    width: 250px;
+    height: auto;
+}
+
+.content_oportunidades .hijo{
+    margin-left: 20px;
+}
+
+.content_oportunidades .texto h2{
+    color: #E91E63;
+    font-size: 1.5em;
+}
+.content_oportunidades .texto{
+    font-size: 1em;
+    line-height: 1.7em;
+    padding-right: 20px;
+    margin-left: 12px;
+    text-align: justify;
+}
+
+.content_oportunidades .botones{
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+}
+
+.content_oportunidades .botones .boton {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    border: 1px solid #a8a8a8;
+    cursor: pointer;
+    background-color: #ffcbe6;
+    color: white;
+
+    /* margin-top: 18%; */
+    /* margin-left: 9%; */
+    border-radius: 10px;
+    width: 180px;
+    height: 48px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #626262;
+
+}
+
+.content_oportunidades .botones .boton:hover{
+    background-color: #f8b9d4;
+    border: 1px solid #bd1877;
+}
+
+
+
+/* ----------------------------------------------*/
+@media screen and (max-width: 840px){
+.content_oportunidades {
+display: flex;
+flex-direction: column;
+width:100%;
+}
+
+.content_oportunidades .modulo {
+    display: flex;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+.content_oportunidades .hijo{
+width: 90%;
+text-align: justify;
+}
+.content_oportunidades .texto{
+font-size:1em;
+line-height:2em;
+width: 100%;
+
+}
+.content_oportunidades .image{
+display: flex;
+height: auto;
+justify-content: center;
+
+}
+.content_oportunidades .modulo h2{
+text-align: center;
+}
+
+.content_oportunidades .botones {
+    display: flex;
+    flex-direction: row;
+    /* white-space: pre-line; */
+    justify-content: space-around;
+}
+
+}

@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body, div, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.site-wrapper{position: relative;}
+
+/* header, section, footer{
+    height: 280px;
+} */
+
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 9px 11px rgb(0 0 0 / 10%);
+    width: 100%;
+    z-index: 998;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+
+}
+
+section{
+    background-color: #fff;
+    top: 160px;
+    position: relative;
+}
+
+#mainContent{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+/*HEADER*/
+
+header .top{
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    background-color: #f8b9d4;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+}
+
+.menuIdioma ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+  }
+
+.logo{display: inline;}
+.logo img{
+    height: 118px;
+}
+
+.menu-header, .menuRegistro {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+.menuPrincipal{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.top-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+
+/*SLIDER*/
+
+.slider-frame {
+	/*width: 90%;*/
+    height: auto;
+	/*margin:50px auto 0;*/
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+
+.itemMenu a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding: 14px 7px;
+}
+
+.itemMenu a:hover{
+    text-decoration: none;
+    color: #e96d6d
+}
+
+
+.menuRegistro a{
+    text-decoration: none;
+    color: #000
+}
+
+
+.menuSocial{
+    float: right;
+}
+
+.menuIdioma, .menuSocial{
+    margin-right: 24px;
+}
+
+.menuSocial ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.menuSocial li img{
+    width: 24px;
+    height: auto;
+}
+
+.menuIdioma img{
+    width: 24px;
+    padding-right: 6px;
+}
+
+.menuIdioma a{
+    color:rgb(14, 14, 14);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.menuIdioma a:hover{
+    color:#fff;
+}
+/*Alianzas*/
+.alianzas{text-align: center;}
+.alianzas h2{color: #E91E63;
+    font-size: 1.5em;
+}
+.alianzas-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.alianzas-wrapper img{
+    height: auto;
+    width: 220px;
+    margin: 0 auto;
+}
+/*FOOTER*/
+#section-footer{
+    background-color: #5d48b8;
+    padding: 10px 10px 30px;
+    box-sizing: content-box;
+}
+
+#section-footer .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-wrap:wrap;
+}
+
+#section-footer .column{
+    margin: 10px;
+    flex: 1;
+}
+
+
+#section-footer .column-us{
+    color: #fff;
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+#section-footer .info{
+    color: #fff;
+}
+
+#section-footer .info .icon{
+    color: #fff;filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+.menu-footer-menu-container{
+    color: #fff;
+}
+
+#section-footer h2{
+    color: #f8b9d4;;
+    
+}
+
+
+
+
+.menu-footer-menu{
+    list-style: none;
+   /*  text-align: center; */
+    padding: 0;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.menu-footer-menu li{
+    
+}
+
+
+.menu-footer-menu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 4px 4px;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.copyright{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 980px) {
+    .logo {
+        /* Estilos para centrar el logo en dispositivos móviles */
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    .top-nav {
+        display: flex;
+        width: 100%;
+        justify-content: normal;
+        align-items: center;
+        height: 76px;
+    }
+
+    .menu-header, .menuRegistro{display: none;}
+
+    .main-menu ul {
+        /* Estilos para ocultar el menú principal en dispositivos móviles y mostrar un menú de hamburguesa */
+    }
+
+    .login-menu, .social-icons {
+        /* Estilos para el menú de login/registro y los iconos de redes sociales en dispositivos móviles */
+    }
+
+    .menuSocial{
+        display: none;
+    }
+
+    h2.title-footer{
+        /*text-align: center;*/
+    }
+    #section-footer .row{
+        
+        /*align-items: center;*/
+    }
+
+    #section-footer .row .column{
+        margin: 10px;
+        flex:inherit;
+    }
+    
+    #section-footer .column-us{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #menu-footer-menu{
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .alianzas-wrapper{
+        flex-direction: column;}
+}
+

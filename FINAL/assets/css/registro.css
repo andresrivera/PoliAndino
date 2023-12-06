@@ -1,0 +1,201 @@
+
+#mainContent{
+    top: 160px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.contenedor
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor .titulo{text-align: center; }
+
+.contenedor .titulo h1{
+    color: #bd1877;
+    font-size: 1.8em;
+}
+
+.contendor,
+.datos-personales,
+.datos-contacto, 
+.datos-info
+{
+    display: flex;
+    width: 1024px;
+    align-items: center;
+}
+
+.imagen,
+.datos-personales-form,
+.datos-contacto-form,.datos-info-form
+{
+    flex: 1;
+}
+
+
+.datos-contacto-form,
+.datos-personales-form,
+.datos-info-form, .contenedor-comentario,
+.data-terminos{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen--personal,
+.imagen--contacto
+{
+    width: 400px;
+    height: 400px;
+}
+
+
+select,
+input{
+    height: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 6px 4px;
+   border-radius: 4px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    height: 12px;
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 0; 
+    margin: 0 4px
+}
+
+.textarea{
+    height: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 6px 4px;
+}
+.hv{
+    margin-top: 18px;
+}
+
+.childs{margin-left: 20px;}
+
+.cabeza-familia{
+    margin-bottom: 18px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+select{
+    height: 2.5rem;
+}
+
+
+.contenedor-doc{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.tdocumento,.ndocumento{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.datos-tel{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.telefono,
+.celular{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.seleccion{
+    gap: 2rem;
+}
+
+.ubicacion{
+    display: flex;
+    gap: 1rem;
+}
+
+.departamento,
+.ciudad{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contenedor-info{
+    display: flex;
+    gap: 1rem;
+}
+
+.estrato,
+.hijos{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.data-send{
+    margin-top: 20px;
+}
+
+.sendButton{
+    display: block;
+    padding: 10px 20px;
+    background-color: #FF9800;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 980px) {
+    .contenedor, .datos-personales, .datos-contacto, .datos-info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor{
+        /*align-items: normal;*/
+    }
+
+    .seleccion .imagen{
+        display: none;
+    }
+
+    .datos-personales-form, .datos-contacto-form, .datos-info-form{
+        flex: none;
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .contenedor-doc, .contenedor-info, .ubicacion, .datos-tel{
+        flex-direction: column;
+    }
+
+    .datos-info-form{
+        width: 90%;
+    }
+}
+
+
